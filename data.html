@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stock Data</title>
+</head>
+<body>
+    <script src="data.js"></script>
+
+    <div id="nav_container">
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="usage.html">Usage</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>Stock Data</h1>
+
+    <div id="stock_input">
+        <fieldset id="stock_fieldset">
+            <legend>Please enter a Stock here</legend>
+            <label for="stock_ticker">Input Stock Ticker:</label>
+            <input type="text" name="stock_ticker" id="stock_ticker">
+            <input type="submit" id="stock_submit" value="Send" style="margin-left: 10px;">
+        </fieldset>
+    </div>
+
+    <div id="stock_data">
+        <table>
+            <thead>
+                <tr>
+                    <th id="ticker_output">Last Day's Stock Data of:</th>
+                    <th id="date_output">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Open Price</th>
+                    <td id="open_output"></td>
+                </tr>
+                <tr>
+                    <th>High Price</th>
+                    <td id="high_output"></td>
+                </tr>
+                <tr>
+                    <th>Low Price</th>
+                    <td id="low_output"></td>
+                </tr>
+                <tr>
+                    <th>Close Price</th>
+                    <td id="close_output"></td>
+                </tr>
+                <tr>
+                    <th>Volume</th>
+                    <td id="volume_output"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="download_div">
+        <fieldset>
+            <legend>If you need more data:</legend>
+            <a href="" id="download_anchor" download>
+                <button id="download_csv">Download CSV</button>
+            </a>
+        </fieldset>
+    </div>
+
+    <div id="user_log"></div>
+</body>
+</html>

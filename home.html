@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <script src="home.js"></script>
+
+    <div id="nav_container">
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="usage.html">Usage</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>Welcome to Tim's Stock Chart</h1>
+
+    <br>
+    
+    <div id="slideshow_container">
+        <!-- Images -->
+        <div class="Slide">
+            <img src="images/image_1.jpg" alt="stock chart" style="width:100%">
+        </div>
+    
+        <div class="Slide">
+            <img src="images/image_2.jpg" alt="yahoo finance" style="width:100%">
+        </div>
+    
+        <div class="Slide">
+            <!-- image gotten from https://www.fool.com/investing/2018/12/26/what-happened-in-the-stock-market-today.aspx -->
+            <img src="images/image_3.jpeg" alt="generic image" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+
+    <form id="email_container" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
+        <fieldset id="email_fieldset">
+            <legend>Join our Email List!</legend>
+            <label for="email_signup">Email:</label>
+            <input type="email" name="email_signup" id="email_signup">
+            <input type="submit" value="Signup!" id="email_submit" style="margin-left: 10px;">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
